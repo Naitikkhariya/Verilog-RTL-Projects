@@ -1,2 +1,2 @@
 # Verilog-RTL-Projects
-Verilog projects with testbench
+This repository contains my RTL design journey from basic blocks to system-level design
