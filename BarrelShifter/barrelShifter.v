@@ -5,7 +5,6 @@ module barrelShifter(
     input wire dir, // 0 for left Shift and 1 for right Shift
     output reg[7:0] output_data
 );
-
 reg [7:0]Stage0_out,Stage1_out;
 //Shift mode States
 localparam Logical = 2'b00,
