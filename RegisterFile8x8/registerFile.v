@@ -18,7 +18,7 @@ module RegisterFile(
     //combinational logic for data read
     always@(*)begin
         if(writeEnable && (writeAddr==readAddr1))begin
-            readData1=writeData;
+            readData1=writeData; //bypass for read after write
         end else readData1=registerFile[readAddr1]; //this performed by 8x1 mux
         if(writeEnable && (writeAddr==readAddr2))begin
             readData2=writeData;
