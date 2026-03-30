@@ -23,7 +23,7 @@ module stack #(
             end
             sp <= {$clog2(stackSize){1'b0}};
         end else begin
-            case {push,pop}
+            case({push,pop})
                 2'b10:begin
                     if(sp<stackSize)begin
                         stack[sp]<=inputData;
@@ -39,13 +39,14 @@ module stack #(
                 2'b11:begin 
                     if(sp == 0)begin // stack is empty then no old value will be pop 
                         stack[sp] <= inputData; // only write 
+                        outputData <= inputData; 
                         sp <= sp+1;
                     end else begin // pop old data and push new data at same sp-1 stack position 
                         outputData <= stack[sp-1];
                         stack[sp-1] <= inputData;
                     end
                 end
-
+                default : ;
             endcase
         end
     end
