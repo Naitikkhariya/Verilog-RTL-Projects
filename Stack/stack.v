@@ -1,4 +1,4 @@
-module moduleName #(
+module stack #(
     parameter stackSize = 8,
     parameter dataSize = 8
 )(
