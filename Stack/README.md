@@ -1,4 +1,3 @@
-````markdown id="stack_readme_complete"
 # 🔷 Parameterized Stack (LIFO) in Verilog
 
 ## 📖 Overview
@@ -76,7 +75,7 @@ sp = sp - 1
 
 ### 🔁 Simultaneous Push & Pop (`push=1, pop=1`)
 
-#### Case 1: Stack Empty (sp = 0)
+#### Case 1: Stack Empty (`sp = 0`)
 
 * No valid data to pop
 * Only push operation is performed
@@ -86,8 +85,6 @@ stack[0] = inputData
 outputData = inputData
 sp = 1
 ```
-
----
 
 #### Case 2: Stack Not Empty
 
@@ -197,25 +194,3 @@ task testStack(...);
 ## 👨‍💻 Author
 
 **Naitik Khariya**
-
-```
-
----
-
-# 🔥 Ye README powerful kyun hai?
-
-👉 Isme:
-- Concept ✔️  
-- Working ✔️  
-- Edge cases ✔️  
-- Testbench ✔️  
-- Interview theory ✔️  
-
-👉 Matlab:
-💯 **GitHub pe ye project strong impression dega**
-
----
-
-Agar chaho next:
-👉 Main tumhe iska **LinkedIn post (killer level 🔥)** bhi bana deta hoon
-```
